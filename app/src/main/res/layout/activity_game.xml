@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_top">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center" android:padding="16dp">
+        <TextView android:id="@+id/levelText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:textColor="@color/score_text" android:textSize="16sp" android:textStyle="bold" />
+        <TextView android:id="@+id/scoreText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:textColor="@color/score_text" android:textSize="16sp" android:textStyle="bold" />
+        <TextView android:id="@+id/coinsText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:textColor="@color/score_text" android:textSize="16sp" android:textStyle="bold" />
+    </LinearLayout>
+    <TextView android:id="@+id/targetText" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="4dp" android:textColor="@color/score_text" android:textSize="14sp" />
+    <TextView android:id="@+id/powerUpText" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="4dp" android:textColor="@color/score_text" android:textSize="12sp" />
+    <com.cozy.candybloom.GameView android:id="@+id/gameView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.70"
+        android:layout_marginStart="12dp" android:layout_marginEnd="12dp" android:layout_marginBottom="12dp" android:layout_marginTop="26dp" />
+
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.30" />
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal" android:orientation="horizontal" android:gravity="center"
+        android:background="@drawable/bg_booster_bar" android:paddingHorizontal="14dp" android:paddingVertical="8dp"
+        android:layout_marginBottom="16dp">
+
+        <FrameLayout android:id="@+id/rocketButton" android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_marginStart="6dp" android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_booster_circle" android:backgroundTint="@color/candy_orange"
+            android:clickable="true" android:focusable="true">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="@string/rocket_emoji" android:textSize="26sp" />
+            <TextView android:id="@+id/rocketBadgeText" android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="bottom|end" android:background="@drawable/bg_badge" android:gravity="center" android:textColor="#FFFFFFFF" android:textSize="11sp" android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/bombButton" android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_marginStart="6dp" android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_booster_circle" android:backgroundTint="@color/candy_purple"
+            android:clickable="true" android:focusable="true">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="@string/bomb_emoji" android:textSize="26sp" />
+            <TextView android:id="@+id/bombBadgeText" android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="bottom|end" android:background="@drawable/bg_badge" android:gravity="center" android:textColor="#FFFFFFFF" android:textSize="11sp" android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/paddleButton" android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_marginStart="6dp" android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_booster_circle" android:backgroundTint="@color/candy_blue"
+            android:clickable="true" android:focusable="true">
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="@string/paddle_emoji" android:textSize="26sp" />
+            <TextView android:id="@+id/paddleBadgeText" android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="bottom|end" android:background="@drawable/bg_badge" android:gravity="center" android:textColor="#FFFFFFFF" android:textSize="11sp" android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
