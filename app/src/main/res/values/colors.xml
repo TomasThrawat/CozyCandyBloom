@@ -1,0 +1,19 @@
+<resources>
+    <color name="bg_top">#FFF3E0</color>
+    <color name="bg_bottom">#FFE0EC</color>
+    <color name="board_bg">#FFFFFFCC</color>
+    <color name="cell_light">#FFF8F0E3</color>
+    <color name="cell_dark">#FFF0E2CE</color>
+    <color name="score_text">#FF5D4037</color>
+    <color name="ic_launcher_background">#FFF3E0</color>
+
+    <color name="candy_red">#FFE57373</color>
+    <color name="candy_orange">#FFFFB74D</color>
+    <color name="candy_yellow">#FFFFF176</color>
+    <color name="candy_green">#FFA5D6A7</color>
+    <color name="candy_blue">#FF90CAF9</color>
+    <color name="candy_purple">#FFCE93D8</color>
+
+    <color name="booster_bar_gold">#FFF4C16A</color>
+    <color name="badge_green">#FF66BB6A</color>
+</resources>
