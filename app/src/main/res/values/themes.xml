@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.CozyCandyBloom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg_top</item>
+        <item name="android:statusBarColor">@color/bg_top</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>
